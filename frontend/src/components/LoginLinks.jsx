@@ -1,3 +1,7 @@
+import { FaFacebookSquare } from "react-icons/fa"
+import { FaSquareXTwitter } from "react-icons/fa6"
+import { FaGooglePlusSquare } from "react-icons/fa"
+
 export const LoginLinks = () => {
   return (
     <div>
@@ -7,17 +11,17 @@ export const LoginLinks = () => {
       <ul>
         <li>
           <a href="#">
-            face
+            <FaFacebookSquare />
           </a>
         </li>
         <li>
           <a href="#">
-            face
+            <FaSquareXTwitter />
           </a>
         </li>
         <li>
           <a href="#">
-            face
+            <FaGooglePlusSquare />
           </a>
         </li>
       </ul>
