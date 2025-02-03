@@ -6,7 +6,7 @@ export const SignUp = () => {
   return (
     <section>
       <div>
-        <img src="./signup.jpg" alt="sign up image" />
+        <img src="./signup.jpg" alt="sign up image" className="" />
         <Button>
           Create an account
         </Button>
