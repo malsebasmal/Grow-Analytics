@@ -4,24 +4,24 @@ import { FaGooglePlusSquare } from "react-icons/fa"
 
 export const LoginLinks = () => {
   return (
-    <div>
+    <div className="mt-4 flex gap-4 items-center">
       <p>
         Or login with
       </p>
-      <ul>
+      <ul className="flex gap-4 items-center justify-center">
         <li>
           <a href="#">
-            <FaFacebookSquare />
+            <FaFacebookSquare className="size-8"/>
           </a>
         </li>
         <li>
           <a href="#">
-            <FaSquareXTwitter />
+            <FaSquareXTwitter className="size-8" />
           </a>
         </li>
         <li>
           <a href="#">
-            <FaGooglePlusSquare />
+            <FaGooglePlusSquare className="size-8" />
           </a>
         </li>
       </ul>
