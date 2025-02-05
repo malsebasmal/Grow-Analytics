@@ -1,5 +1,8 @@
-import { listen } from "./app.js"
+import { app } from "./app.js"
+import "dotenv/config"
 
-listen(PORT, () => {
+const PORT = process.env.PORT
+
+app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`)
 })

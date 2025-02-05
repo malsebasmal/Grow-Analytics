@@ -1,9 +1,9 @@
 import { Router } from "express"
-import { UsersC } from "../controllers/users"
-import { UserM } from "../models/mysql/users"
+import { UsersC } from "../controllers/users.js"
+import { UserM } from "../models/mysql/users.js"
 
 export const usersR = Router()
-const usersC = UsersC(UserM)
+const usersC = new UsersC(UserM)
 
 usersR.get("/", usersC.getAll)
 usersR.get("/:id", usersC.getById)
