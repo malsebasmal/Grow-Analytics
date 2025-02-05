@@ -3,5 +3,23 @@ export class UserM {
     
   }
 
-  static async getAll
+  static async getAll () {
+
+  }
+
+  static async getById () {
+
+  }
+
+  static async create () {
+
+  }
+
+  static async delete () {
+
+  }
+
+  static async update () {
+
+  }
 }

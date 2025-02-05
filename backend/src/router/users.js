@@ -1,11 +1,12 @@
 import { Router } from "express"
 import { UsersC } from "../controllers/users"
+import { UserM } from "../models/mysql/users"
 
 export const usersR = Router()
-const UsersC = UsersC()
+const usersC = UsersC(UserM)
 
-usersR.get("/", UsersC.)
-usersR.get("/:id")
-usersR.post("/")
-usersR.delete("/:id")
-usersR.put("/:id")
+usersR.get("/", usersC.getAll)
+usersR.get("/:id", usersC.getById)
+usersR.post("/", usersC.create)
+usersR.delete("/:id", usersC.delete)
+usersR.put("/:id", usersC.update)
